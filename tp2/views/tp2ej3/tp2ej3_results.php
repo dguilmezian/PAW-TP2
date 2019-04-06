@@ -29,5 +29,4 @@
          
          echo "Hora del Turno: " .htmlspecialchars(stripslashes(trim($_GET["hour"])));
          echo "<br>";
-
-      ?>
+?>
