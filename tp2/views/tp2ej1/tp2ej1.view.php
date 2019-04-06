@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,13 +12,45 @@
 <body>
     <?php require 'views/header.view.php' ?>
     <h1>Formulario para Solicitud de Turno</h1>
-    <form action="tp2ej3_results" method="GET">
+    <form oninput="result.value=parseInt(heigh.value)" method="POST">
         <?php require 'views/forms/form.html' ?>
         <input type="reset" value="Limpiar">
         <input type="submit" value="Enviar">
     </form>
 
+    <?php
+    echo "<h2>Sus datos ingresados para el Turno :</h2>";
+    echo $name;
+    echo "<br>";
 
+    echo $email;
+    echo "<br>";
+
+    echo $phone;
+    echo "<br>";
+
+    echo $age;
+    echo "<br>";
+
+    echo $shoeSize;
+    echo "<br>";
+
+    echo $heigh;
+    echo "<br>";
+
+    echo $birthDate;
+    echo "<br>";
+
+    echo $hair;
+    echo "<br>";
+
+    echo $dateDay;
+    echo "<br>";
+
+    echo $hour;
+    echo "<br>";
+
+    ?>
 </body>
 
 </html>

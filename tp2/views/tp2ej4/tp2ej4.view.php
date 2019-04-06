@@ -8,14 +8,15 @@
     <link href="<?= statics('main.css') ?>" rel="stylesheet" type="text/css">
     <title>Formulario</title>
 </head>
-
 <body>
+
     <?php require 'views/header.view.php' ?>
     <h1>Formulario para Solicitud de Turno</h1>
-    <form action="tp2ej3_results" method="GET">
+    <form action="save" method="POST" enctype="multipart/form-data">
         <?php require 'views/forms/form.html' ?>
+        <input type="file" name="personalImage" id="personalImage"><br><br>
         <input type="reset" value="Limpiar">
-        <input type="submit" value="Enviar">
+        <input type="submit" name="submit" id="submit" value="Enviar">
     </form>
 
 
