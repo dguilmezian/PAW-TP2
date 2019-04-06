@@ -26,4 +26,4 @@ $main_title = "TP2 Ejercicio 1 y 2";
         return $data;
      }
 
-require 'views/tp2ej1.view.php';
+require 'views/tp2ej1/tp2ej1.view.php';
