@@ -3,6 +3,7 @@
 $app->router->define([
     '' => 'controllers/index.php',
     'tp2ej1'=>'controllers/tp2ej1/tp2ej1.php',
+    'tp2ej2'=>'controllers/tp2ej2/tp2ej2.php',
     'tp2ej3'=>'controllers/tp2ej3/tp2ej3.php',
     'tp2ej3_results'=>'views/tp2ej3/tp2ej3_results.php',
     // descomentar
