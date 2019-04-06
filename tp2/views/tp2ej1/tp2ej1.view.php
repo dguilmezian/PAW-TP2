@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="<?= statics('main.css') ?>" rel="stylesheet" type="text/css">
     <title>Formulario</title>
 </head>
 
 <body>
+    <?php require 'views/header.view.php' ?>
     <h1>Formulario para Solicitud de Turno</h1>
     <form oninput="result.value=parseInt(heigh.value)" method="POST">
         <?php require 'views/forms/form.html' ?>

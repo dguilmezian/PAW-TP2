@@ -1,11 +1,11 @@
 body {
-  background: #4e514e;
+  background: white;
 }
 
 header, main {
   max-width: 1024px;
   margin: auto;
-  background: white;
+  background: lightskyblue;
   padding: 10px;
 }
 

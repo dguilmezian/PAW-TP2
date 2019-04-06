@@ -25,5 +25,5 @@ $main_title = "TP2 Ejercicio 1 y 2";
         $data = htmlspecialchars($data);
         return $data;
      }
-
+$main_title="TP 2 - EJ 1 y 2";
 require 'views/tp2ej1/tp2ej1.view.php';
