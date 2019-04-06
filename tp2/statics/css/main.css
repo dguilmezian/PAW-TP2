@@ -2,7 +2,7 @@ body {
   background: white;
 }
 
-header, main {
+header {
   max-width: 1024px;
   margin: auto;
   background: lightskyblue;

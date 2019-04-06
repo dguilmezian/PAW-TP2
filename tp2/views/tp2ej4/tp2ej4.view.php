@@ -13,8 +13,7 @@
     <?php require 'views/header.view.php' ?>
     <h1>Formulario para Solicitud de Turno</h1>
     <form action="save" method="POST" enctype="multipart/form-data">
-        <?php require 'views/forms/form.html' ?>
-        <input type="file" name="personalImage" id="personalImage"><br><br>
+        <?php require 'views/forms/form-attachment.html' ?>
         <input type="reset" value="Limpiar">
         <input type="submit" name="submit" id="submit" value="Enviar">
     </form>
