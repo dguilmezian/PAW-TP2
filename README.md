@@ -14,16 +14,16 @@
 <p>Abrir una consola de comandos en la carpeta /tp2 y escribir el comando php -S localhost:8000</p>
 <hr>
 <h2>Estructura</h2>
-<p>-controllers
----ej1
-------ej1.php
----ej2
-------ej2.php
----ej3 
--views
----ej1
-------ej1.view.php
----ej2
-------ej2.view.php
----ej3
+<p>-controllers<br>
+---ej1<br>
+------ej1.php<br>
+---ej2<br>
+------ej2.php<br>
+---ej3 <br>
+-views<br>
+---ej1<br>
+------ej1.view.php<br>
+---ej2<br>
+------ej2.view.php<br>
+---ej3<br>
 </p>

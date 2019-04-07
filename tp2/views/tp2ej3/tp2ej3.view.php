@@ -10,6 +10,8 @@
 </head>
 
 <body>
+<?php require 'views/header.view.php' ?>
+
     <h1>Formulario para Solicitud de Turno</h1>
     <form action="tp2ej3_results" method="GET">
         <?php require 'views/forms/form.html' ?>

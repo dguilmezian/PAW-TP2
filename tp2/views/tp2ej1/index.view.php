@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="utf-8" />
   <link href="<?= statics('main.css') ?>" rel="stylesheet" type="text/css">
-  <title><?= $title ?></title>
+  <title><?= $page_title ?></title>
 </head>
 <body>
   <?php require 'views/header.view.php' ?>
