@@ -45,3 +45,11 @@ function setActive($request_uri_link)
 {
     return ($request_uri_link === $_SERVER['REQUEST_URI']) ? "active" : "";
 }
+
+function checkData($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+
+  return $data;
+ }

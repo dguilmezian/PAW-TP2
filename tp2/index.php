@@ -1,6 +1,7 @@
 <?php
 
 require 'core/bootstrap.php';
+require '.env.php';
 require 'routes.php';
 
 $url = $app->request->getUrl();

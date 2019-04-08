@@ -45,8 +45,8 @@ if ($app->request->method == "POST") {
       $errors['dateError'] = 'Fecha de turno inválida';
   } else {
     $currentDateTime = strtotime(date('d-m-Y'));
-    $dateDay = strtotime($dateDay);
-    if ($currentDateTime < $dateDay) {
+    $dateDayTime = strtotime($dateDay);
+    if ($currentDateTime < $dateDayTime) {
       $errors['dateError'] = 'La fecha del turno que está pidiendo ya pasó. Por favor pida otra fecha.';
     }
 
@@ -56,11 +56,5 @@ if ($app->request->method == "POST") {
 
 }
 
-  function checkData($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-
-    return $data;
-   }
+//Llamo a la vista
 require 'views/tp2ej1/index.view.php';

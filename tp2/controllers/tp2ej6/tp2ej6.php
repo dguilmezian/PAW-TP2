@@ -47,7 +47,7 @@ if ($app->request->method == "POST") {
     $currentDateTime = strtotime("now");
     $dateDayTime = strtotime($dateDay);
 
-    if ($currentDateTime < $dateDayTime) {
+    if ($currentDateTime > $dateDayTime) {
       $errors['dateError'] = 'La fecha del turno que está pidiendo ya pasó. Por favor pida otra fecha.';
     } else {
       $info['Fecha del turno'] = $dateDay;
@@ -56,7 +56,16 @@ if ($app->request->method == "POST") {
 
   $info['Hora del turno'] = checkData($input["hour"]);
 
-}
+  //Si no hay errores guardo los datos
+  if (empty($errors)) {
+    require 'models/Appointment.php';
+    $db = new Appointment();
+    $db->add($input);
 
-//Lamo a la vista
-require 'views/tp2ej2/index.view.php';
+  }
+
+} else {
+  //Lamo a la vista
+  require 'views/tp2ej6/index.view.php';
+
+}
