@@ -9,14 +9,14 @@
     <title>Formulario</title>
 </head>
 <body>
-
-    <?php require 'views/header.view.php' ?>
     <h1>Formulario para Solicitud de Turno</h1>
     <form action="save" method="POST" enctype="multipart/form-data">
         <?php require 'views/forms/form-attachment.html' ?>
         <input type="reset" value="Limpiar">
         <input type="submit" name="submit" id="submit" value="Enviar">
     </form>
+
+    <?php require 'views/footer.view.php' ?>
 
 
 </body>

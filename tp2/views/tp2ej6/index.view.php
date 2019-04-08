@@ -9,11 +9,14 @@
   <title><?= $main_title ?></title>
 </head>
 <body>
-  <?php require 'views/header.view.php' ?>
+  <?php require 'views/tp2ej6/header.view.php' ?>
   <main>
+    <h1><?= $main_title ?></h1>
     <?php require 'index.content.view.php' ?>
     <?php require 'index.summary.view.php' ?>
   </main>
+
+  <?php require 'views/footer.view.php' ?>
 
 </body>
 </html>

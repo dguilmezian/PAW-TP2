@@ -1,3 +1,3 @@
-<header>
+<footer>
     <?php require 'nav.view.php' ?>
-</header>
+</footer>
