@@ -4,9 +4,9 @@
     <li>Ejercicio 1 ✓ </li>
     <li>Ejercicio 2 ✓ </li>
     <li>Ejercicio 3 ✓ </li>
-    <li>Ejercicio 4 X </li>
+    <li>Ejercicio 4 ✓ </li>
     <li>Ejercicio 5 X </li>
-    <li>Ejercicio 6 X </li>
+    <li>Ejercicio 6 ✓ </li>
     <li>Ejercicio 7 X </li>
 </ul>
 <hr>
