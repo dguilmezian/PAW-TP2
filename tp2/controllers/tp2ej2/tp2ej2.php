@@ -47,7 +47,7 @@ if ($app->request->method == "POST") {
     $currentDateTime = strtotime("now");
     $dateDayTime = strtotime($dateDay);
 
-    if ($currentDateTime < $dateDayTime) {
+    if ($currentDateTime > $dateDayTime) {
       $errors['dateError'] = 'La fecha del turno que está pidiendo ya pasó. Por favor pida otra fecha.';
     } else {
       $info['Fecha del turno'] = $dateDay;

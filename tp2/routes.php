@@ -8,7 +8,7 @@ $app->router->define([
     'tp2ej3_results'=>'views/tp2ej3/tp2ej3_results.php',
     // descomentar
     'tp2ej4'=>'controllers/tp2ej4/tp2ej4.php',
-    'save'=>'controllers/tp2ej4/save.php',
+    // 'save'=>'controllers/tp2ej4/save.php',
     
     'tp2ej6'=>'controllers/tp2ej6/tp2ej6.php',
     'tp2ej6/turnos' =>'controllers/tp2ej6/listado.php',
