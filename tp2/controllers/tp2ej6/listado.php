@@ -1,5 +1,5 @@
 <?php
-$page_title = 'TP N°2 - Ejercicio 6';
+$page_title = 'TP N°2 - Ejercicio 6 y 7';
 $main_title = "Listado de turnos";
 
 require 'models/Appointment.php';

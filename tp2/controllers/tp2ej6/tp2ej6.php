@@ -1,5 +1,5 @@
 <?php
-$page_title = 'TP N°2 - Ejercicio 2';
+$page_title = 'TP N°2 - Ejercicio 6 y 7';
 $main_title = "Formulario para Solicitud de Turno";
 
 if ($app->request->method == "POST") {
@@ -55,6 +55,11 @@ if ($app->request->method == "POST") {
   }
 
   $info['Hora del turno'] = checkData($input["hour"]);
+
+  //////////////////////////////////////////////////////////////////
+  //  guardo la imagen
+  require 'save.php';
+  //////////////////////////////////////////////////////////////////
 
   //Si no hay errores guardo los datos
   if (empty($errors)) {
