@@ -3,7 +3,7 @@
 <h1>Para hacer andar el Framework</h1>   
 <p>Abrir una consola de comandos en la carpeta /tp2 y escribir el comando php -S localhost:8000, luego en el navegador escribir 'localhost:8000' (sin comillas) para acceder.</p>
 <hr>
-<h2>Para resolver el Trabajo Práctico se uso una sola instancia del framework MVC visto en clase para resolver todos los ejercicios. Se uso la siguiente estructura en los controladore y vistas para organizar los ejercicios.</h2>
+<h2>Para resolver el Trabajo Práctico se uso una sola instancia del framework MVC visto en clase para resolver todos los ejercicios. Se uso la siguiente estructura en los controladores y vistas para organizar los ejercicios.</h2>
 <p>-controllers<br>
 ---ej1<br>
 ------ej1.php<br>
@@ -11,6 +11,7 @@
 ------ej2.php<br>
 ---ej3 <br>
 -views<br>
+---forms<br>
 ---ej1<br>
 ------ej1.view.php<br>
 ---ej2<br>
@@ -19,6 +20,7 @@
 </p>
 <h4>Nota 1: para el ejericio 7 no se incluyó carpeta en controllers ni view con el nombre tp2ej7. Todas las vistas del ejercicio 7 están incluidas en la carpeta del ejercicio 6 en el subdirectorio 'views/tp2ej6/dates', también en la carpeta 'controllers/tp2ej6' está el controlador del ejercicio 7 con el nombre show.php.</h4>
 <h4>Nota 2: las imágenes del ejercicio 4 estan alojadas en el directorio 'controllers/tp2ej4/uploads', mientras que las del ejercicio 7 estan en el directorio 'controllers/tp2ej6/uploads' </h4>
+<h4>Nota 3: en el directorio 'views/forms' estan los formularios que se usaron durante todo el trabajo práctico. El form.html contiene el formulario estándar y el form-attachment.html es el formulario estándar con el agregado del input para la subida del archivo.</h4>
 <br>
 <hr>
 <h1>Preguntas Teóricas<h1>
