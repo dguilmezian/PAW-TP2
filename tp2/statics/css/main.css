@@ -7,6 +7,11 @@ header, footer {
   margin: auto;
   background: lightskyblue;
   padding: 16px;
+  text-align: center;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 /* Nav styles */
@@ -60,7 +65,7 @@ footer {
   height: 50px;
 }
 
-#shift-form {
+#shift-form, #form-summary {
     padding: 13px 15vw;
 }
 

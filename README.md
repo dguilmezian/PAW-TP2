@@ -35,9 +35,11 @@
     5. Utilice las herramientas para desarrollador del navegador y observe cómo fueron codificados por el navegador los datos enviados por el navegador en los dos ejercicios anteriores. ¿Qué diferencia nota?
     </h2>
     <p>
-    En el metodo GET del ejercicio 3 se utiliza application/xhtml mientras que con el metodo POST en el ejercicio 4 también se utiliza multipart/form-data ya que se hace la carga de un archivo binario. 
+    En el metodo GET del ejercicio 3 se utiliza application/xhtml mientras que con el metodo POST en el ejercicio 4 también se utiliza multipart/form-data ya que se hace la carga de un archivo binario.
     </p>
     <h2>6. ¿Cómo relaciona la imagen del turno con los datos del turno? Comente alternativas que evaluó y opción elegida.</h2>
     <p>
-    Cuando se guarda la línea con los datos del turno en el archivo existe un campo pathImg que contiene el path donde esta alojada la imagen. 
+    La imagen del turno se relaciona con un turno particular. Es decir que cada entrada del archivo persistente, equivale a un turno pedido y por ende una imágen relacionada.
+    Cuando se guarda la línea con los datos del turno, uno de los campos es el path a la imagen generando la relacion Turno - Imágen de diagnóstico.
+    Se pensó la alternativa de renombrar la imágen de diagnostico como id_turno - fecha_de_turno pero no se llevó a cabo.
     </p>

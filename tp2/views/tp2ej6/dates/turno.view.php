@@ -14,12 +14,11 @@
   <?php require 'views/tp2ej6/header.view.php' ?>
   <main>
     <h1><?= $title ?></h1>
-    <h3><?= $main_title ?></h3>
     <?php
       require 'turno.summary.view.php';
     ?>
   </main>
-  
+
   <?php require 'views/footer.view.php' ?>
 
 </body>
