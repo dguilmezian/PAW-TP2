@@ -1,6 +1,7 @@
 <?php
 $page_title = 'TP N°2 - Ejercicio 6 y 7';
-
+$title =  "<h1>Ejercicio 7</h1>
+                <h2><u>Detalle del Turno</u></h2>";
 require 'models/Appointment.php';
 
 $appointment = new Appointment();

@@ -1,6 +1,7 @@
 <?php
 $page_title = 'TP N°2 - Ejercicio 2';
-$main_title = "Formulario para Solicitud de Turno";
+$main_title = "<h1>Ejercicio 2</h1>
+              <h2><u>Formulario para Solicitud de Turno</u></h2>";
 
 if ($app->request->method == "POST") {
 
@@ -11,7 +12,7 @@ if ($app->request->method == "POST") {
 
   $info['Nombre'] = checkData($input["name"]);
   //Valido si el nombre contiene solo letras
-  if (!preg_match("/^[A-Za-z\\- \']+$/",$info['Nombre'])) {
+  if (!preg_match("/^[A-Za-z\\- \']+$/", $info['Nombre'])) {
     $errors['nameErr'] = "Solo letras está permitido en el campo nombre";
   }
   //Valido si es un mail valido con la funcion de PHP
@@ -27,7 +28,7 @@ if ($app->request->method == "POST") {
   }
   $info['Numero de calzado'] = checkData($input["shoeSize"]);
   //Valido si el numero de calzado esta entre el rango dado (20 - 45)
-  if ((!(20 <= $info['Numero de calzado'] && $info['Numero de calzado'] <= 45)) && (!(is_numeric($info['Numero de calzado']))))  {
+  if ((!(20 <= $info['Numero de calzado'] && $info['Numero de calzado'] <= 45)) && (!(is_numeric($info['Numero de calzado'])))) {
     $errors['shoesError'] = "Número de calzado inválido";
   }
 
@@ -41,8 +42,8 @@ if ($app->request->method == "POST") {
   $day = $dateExploded[2];
   $month = $dateExploded[1];
   $year = $dateExploded[0];
-  if(!checkdate($month, $day, $year)){
-      $errors['dateError'] = 'Fecha de turno inválida';
+  if (!checkdate($month, $day, $year)) {
+    $errors['dateError'] = 'Fecha de turno inválida';
   } else {
     $currentDateTime = strtotime("now");
     $dateDayTime = strtotime($dateDay);
@@ -55,7 +56,6 @@ if ($app->request->method == "POST") {
   }
 
   $info['Hora del turno'] = checkData($input["hour"]);
-
 }
 
 //Lamo a la vista

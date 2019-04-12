@@ -8,7 +8,7 @@
       <th></th>
     </tr>
 <?php
-
+$html="";
 foreach ($dates as $key => $fila) {
   $html .= "<tr>";
   foreach ($mapData as $campo => $valor) {
@@ -16,7 +16,7 @@ foreach ($dates as $key => $fila) {
     $html .= $fila[$valor];
     $html .= '</td>';
   }
-  $html .= "<td id=\"row$key-view\" ><a href=\"turno/?id={$fila['id']}\">Ver</a></td>";
+  $html .= "<td id=\"row$key-view\" ><a href=\"turno/?id={$fila['id']}\">Ver (Ejercicio 7)</a></td>";
   $html .= '</tr>';
 }
 $html .= '</table>';

@@ -11,14 +11,15 @@
 
 <body>
 
-    <h1>Formulario para Solicitud de Turno</h1>
+    <h1>Ejercicio 3</h1>
+    <h2><u>Formulario para Solicitud de Turno</u></h2>
     <form action="tp2ej3_results" method="GET">
         <?php require 'views/forms/form.html' ?>
         <input type="reset" value="Limpiar">
         <input type="submit" value="Enviar">
     </form>
 
-<?php require 'views/footer.view.php' ?>
+    <?php require 'views/footer.view.php' ?>
 
 </body>
 

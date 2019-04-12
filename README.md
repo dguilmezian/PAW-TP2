@@ -1,19 +1,9 @@
 <h1>Trabajo Practico N°2 - Tecnologías del lado del servidor</h1>
-<h3>Resueltos</h3>
-<ul>
-    <li>Ejercicio 1 ✓ </li>
-    <li>Ejercicio 2 ✓ </li>
-    <li>Ejercicio 3 ✓ </li>
-    <li>Ejercicio 4 ✓ </li>
-    <li>Ejercicio 5 X </li>
-    <li>Ejercicio 6 ✓ </li>
-    <li>Ejercicio 7 X </li>
-</ul>
 <hr>
 <h1>Para hacer andar el Framework</h1>   
-<p>Abrir una consola de comandos en la carpeta /tp2 y escribir el comando php -S localhost:8000</p>
+<p>Abrir una consola de comandos en la carpeta /tp2 y escribir el comando php -S localhost:8000, luego en el navegador escribir 'localhost:8000' (sin comillas) para acceder.</p>
 <hr>
-<h2>Estructura</h2>
+<h2>Para resolver el Trabajo Práctico se uso una sola instancia del framework MVC visto en clase para resolver todos los ejercicios. Se uso la siguiente estructura en los controladore y vistas para organizar los ejercicios.</h2>
 <p>-controllers<br>
 ---ej1<br>
 ------ej1.php<br>
@@ -27,6 +17,8 @@
 ------ej2.view.php<br>
 ---ej3<br>
 </p>
+<h4>Nota 1: para el ejericio 7 no se incluyó carpeta en controllers ni view con el nombre tp2ej7. Todas las vistas del ejercicio 7 están incluidas en la carpeta del ejercicio 6 en el subdirectorio 'views/tp2ej6/dates', también en la carpeta 'controllers/tp2ej6' está el controlador del ejercicio 7 con el nombre show.php.</h4>
+<h4>Nota 2: las imágenes del ejercicio 4 estan alojadas en el directorio 'controllers/tp2ej4/uploads', mientras que las del ejercicio 7 estan en el directorio 'controllers/tp2ej6/uploads' </h4>
 <br>
 <hr>
 <h1>Preguntas Teóricas<h1>
@@ -44,4 +36,8 @@
     </h2>
     <p>
     En el metodo GET del ejercicio 3 se utiliza application/xhtml mientras que con el metodo POST en el ejercicio 4 también se utiliza multipart/form-data ya que se hace la carga de un archivo binario. 
+    </p>
+    <h2>6. ¿Cómo relaciona la imagen del turno con los datos del turno? Comente alternativas que evaluó y opción elegida.</h2>
+    <p>
+    Cuando se guarda la línea con los datos del turno en el archivo existe un campo pathImg que contiene el path donde esta alojada la imagen. 
     </p>
