@@ -24,30 +24,31 @@
 <br>
 <hr>
 <h1>Preguntas Teóricas<h1>
-    <h2>
+    <strong>
     3. Realice las modificaciones necesarias para que el script del punto anterior reciba los datos mediante el método GET. ¿Qué diferencia nota? ¿Cuándo es conveniente usar cada método? Consejo: Utilice las herramientas de desarrollador de su Navegador (Pestaña Red) para observar las diferencias entre las diferentes peticiones.
-    </h2>
+    </strong>
     <p>Ambos métodos son del protocolo HTTP, dónde se permite hacer una conexión con el servidor: uno para pedirle datos (GET) y el otro para enviarle datos (POST)
-    La primer diferencia clara y visual es que en el método GET los parámetros viajan en la URL (visibles para el usuario) mientras que en la petición POST no, estos viajan en en la request (además se agregan dos encabezados, Content-Type y Content-Length que determinan el tipo de codificacion y el tamaño de la petición).
-    Es conveniente usar GET: cuando queremos consultarle datos al servidor, cuando queres que la URL sea visible por algún motivo en particular (necesidad de cachearla, que el usuario pueda agregarla a sus favoritos)
-    El método POST, se aconseja en el envío de datos por formulario y la necesidad de ejecutar una acción en el servidor como el insert ó update de datos.</p>
-    <h2>
+    La primer diferencia clara y visual es que en el método GET los parámetros viajan en la URL (visibles para el usuario) mientras que en la petición POST no, estos viajan en en la request (además se agregan dos encabezados, Content-Type y Content-Length que determinan el tipo de codificacion y el tamaño de la petición).</p>
+    <p>Es conveniente usar GET: cuando queremos consultarle datos al servidor, cuando queres que la URL sea visible por algún motivo en particular (necesidad de cachearla, que el usuario pueda agregarla a sus favoritos).</p>
+    <p>El método POST, se aconseja en el envío de datos por formulario y la necesidad de ejecutar una acción en el servidor como el insert ó update de datos.</p>
+    <strong>
     4. Agregue al formulario un campo que permita adjuntar una imagen, y que la etiqueta del campo sea Diagnóstico. El campo debe validar que sea un tipo de imagen valido (.jpg o .png) y será optativo. La imagen debe almacenarse en un subdirectorio del proyecto y también debe mostrarse al usuario al mostrar el resumen del turno del ejercicio 2. ¿Qué sucede si 2 usuarios cargan imágenes con el mismo nombre de imagen? ¿Qué mecanismo implementar para evitar que un usuario sobrescriba una imagen con el mismo nombre?
-    </h2>
-    <p>Si dos usuarios cargan un archivo con el mismo nombre el último archivo cargado reemplazará al anterior. El mecanismo implementado por nosotros en el ejercicio fue chequear si existe un archivo cargado con el mismo nombre, si no existe se guarda con su nombre original, si existe uno con el mismo nombre se procede a renombrar el archivo cargado mediante el agregado de un número secuencial al final (qué incrementa en caso de existencia).
-    Otra alternativa pensada fue la de renombrar el archivo a nuestro gusto llevando el control del mismo mediante un prefijo (el dni quiźas) y un contador por ejemplo.
+    </strong>
+    <p>Si dos usuarios cargan un archivo con el mismo nombre el último archivo cargado reemplazará al anterior. El mecanismo implementado por nosotros en el ejercicio fue chequear si existe un archivo cargado con el mismo nombre, si no existe se guarda con su nombre original, si existe uno con el mismo nombre se procede a renombrar el archivo cargado mediante el agregado de un número secuencial al final (qué incrementa en caso de existencia).</p>
+    <p>Otra alternativa pensada fue la de renombrar el archivo a nuestro gusto llevando el control del mismo mediante un prefijo (el dni quiźas) y un contador por ejemplo.
     </p>
-    <h2>
+    <strong>
     5. Utilice las herramientas para desarrollador del navegador y observe cómo fueron codificados por el navegador los datos enviados por el navegador en los dos ejercicios anteriores. ¿Qué diferencia nota?
-    </h2>
+    </strong>
     <p>
     Como mencionamos anteriormente:
-    - En el metodo GET los datos viajan en la url  se utiliza como tipo de contenido del body: application/xhtml
-    - En el método POST los datos del form viajan en el body y en la cabecera se aclara que en el contenido que viaja es del tipo application/x-www-form-urlencoded. Mientras que con el método POST en el ejercicio 4 en lo que es el header de la request el Content-Type es "multipart/form-data" ya que se hace la carga de un archivo binario de la imágen.
+    <ul>
+    <li>En el metodo GET los datos viajan en la url  se utiliza como tipo de contenido del body: application/xhtml</li>
+    <li>En el método POST los datos del form viajan en el body y en la cabecera se aclara que en el contenido que viaja es del tipo application/x-www-form-urlencoded. Mientras que con el método POST en el ejercicio 4 en lo que es el header de la request el Content-Type es "multipart/form-data" ya que se hace la carga de un archivo binario de la imágen.</li>
     </p>
-    <h2>6. ¿Cómo relaciona la imagen del turno con los datos del turno? Comente alternativas que evaluó y opción elegida.</h2>
+    <strong>6. ¿Cómo relaciona la imagen del turno con los datos del turno? Comente alternativas que evaluó y opción elegida.</strong>
     <p>
-    La imagen del turno se relaciona con un turno particular. Es decir que cada entrada del archivo persistente, equivale a un turno pedido y por ende una imágen relacionada.
-    Cuando se guarda la línea con los datos del turno, uno de los campos es el path a la imagen generando la relacion Turno - Imágen de diagnóstico.
+    La imagen del turno se relaciona con un turno particular. Es decir que cada entrada del archivo persistente, equivale a un turno pedido y por ende una imágen relacionada.</p>
+    <p>Cuando se guarda la línea con los datos del turno, uno de los campos es el path a la imagen generando la relacion Turno - Imágen de diagnóstico.
     Se pensó la alternativa de renombrar la imágen de diagnostico como id_turno - fecha_de_turno pero no se llevó a cabo.
     </p>
