@@ -13,7 +13,7 @@
 <body>
   <main>
     <h1><?= $main_title ?></h1>
-
+    <h2><?= $subtitle ?></h2>
     <?php
     if (isset($_POST["name"])) {
       require 'index.summary.view.php';

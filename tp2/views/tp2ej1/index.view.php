@@ -11,6 +11,7 @@
 <body>
   <main>
     <h1><?= $main_title ?></h1>
+    <h2><?= $subtitle ?></h2>
     <?php require 'index.content.view.php' ?>
     <?php require 'index.summary.view.php' ?>
   </main>

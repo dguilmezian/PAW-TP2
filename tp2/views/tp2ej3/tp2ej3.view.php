@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="<?= statics('main.css') ?>" rel="stylesheet" type="text/css">
-    <title>Formulario</title>
+    <title><?= $main_title ?></title>
 </head>
 
 <body>
-
-    <h1>Ejercicio 3</h1>
-    <h2><u>Formulario para Solicitud de Turno</u></h2>
+    <h1><?= $main_title ?></h1>
+    <h2><?= $subtitle ?></h2>
     <section id="shift-form">
       <form action="tp2ej3_results" method="GET">
           <?php require 'views/forms/form.html' ?>

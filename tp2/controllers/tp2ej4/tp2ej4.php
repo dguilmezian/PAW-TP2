@@ -1,7 +1,7 @@
 <?php
 $page_title = 'TP N°2 - Ejercicio 4';
-$main_title = "<h1>Ejercicio 4</h1>
-                <h2><u>Formulario para Solicitud de Turno</u></h2>";
+$main_title = "Ejercicio 4";
+$subtitle = "Formulario para Solicitud de Turno";
 
 if ($app->request->method == "POST") {
 
